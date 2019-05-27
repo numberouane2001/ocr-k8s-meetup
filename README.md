@@ -1,5 +1,5 @@
 # ocr-k8s-meetup
-k8s déploiement files
+k8s deployment files
 Those files contains the k8s definition files to deploy a small app analysing the Meetup activities in France.
 
 
