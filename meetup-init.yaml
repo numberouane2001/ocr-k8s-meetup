@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: init
+spec:
+  containers:
+  - name: meetup-init
+    image: numberouane2001/meetup-init:latest

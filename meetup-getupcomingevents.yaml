@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: events
+spec:
+  containers:
+  - name: meetup-getupcomingevents
+    image: numberouane2001/meetup-getupcomingevents
