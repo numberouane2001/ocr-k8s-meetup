@@ -7,11 +7,11 @@ PREREQUISITES:
 In order to create the application resources in k8s, first ensure that you have a k8s cluster working.
 Note, it has been tested on AWS AKS cluster and an on premise k8s 1.14 cluster.
 It uses statefulset applications. This kind of deployment requires that a dynamic storage solution has been setup on the k8s cluster. You can use for this glusterfs, storageos,... Please refer to the k8s documentation for more details.
+A storage class must be created before the creation of the pods, in order to allow the statefulsets to claim storage on this storage class. If you are using AWS EKS cluster, you can refer to the page https://docs.aws.amazon.com/fr_fr/eks/latest/userguide/storage-classes.html. Otherwise, please refer to the documentation relative to the storage class you choose.
 It requires that you have kubectl installed and configured to connect to your k8s cluster.
 
 CONTENT:
 Those files deploys:
-- dynamic storage class
 - a zookeeper cluster
 - a kafka cluster
 - a cassandra cluster
