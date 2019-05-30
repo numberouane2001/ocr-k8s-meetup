@@ -22,8 +22,12 @@ Those files deploys:
 - deployment and a loadbalancer with an embedded web server retrieving the Top 3 of the most active cities on Meetup on the last month.
 
 DEPLOYMENT:
-In order to deploy the application, run the following command:
-kubectl create -f https://github.com/numberouane2001/ocr-k8s-meetup.git
+In order to deploy the application, clone the repository on your computer and deploy the yaml files in kubernetes using those commands:
+- git clone https://github.com/numberouane2001/ocr-k8s-meetup.git
+- kubectl create -f ocr-k8s-meetup
+
+A second option for the deployment will be available soon typing the following command (not working with kubernetes 1.12 and lower, to be tested with kubernetes 1.13+):
+- kubectl create -f ocr-k8s-meetup
 
 TESTING THE APPLICATION:
 Check the status of the pods using 
