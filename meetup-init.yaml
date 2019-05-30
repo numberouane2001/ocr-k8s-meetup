@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: meetup-init
-    image: numberouane2001/meetup-init:latest
+    image: numberouane2001/meetup-init
